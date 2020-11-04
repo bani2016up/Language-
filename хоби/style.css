@@ -1,0 +1,397 @@
+
+
+
+.header{
+    display: flex;
+    left: 33%;
+}
+.main_minu{
+    position: absolute;
+    display: flex;
+
+    left: 30%;
+    top: 0%;
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #9d999d;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+  
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: inline-block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+.name{
+    position: absolute;
+    display: flex;
+    left: 40%;
+    top: 15%;
+    text-align: center;
+}
+
+.we_can_do{
+    position: absolute;
+    display: flex;
+    left: 33%;
+    top: 25%;
+    font-size: x-large;
+}
+.li_1{
+    position: absolute;
+    display: flex;
+    left: 30%;
+    top: 35%;
+    color: #606060;
+}
+.li_2{
+    position: absolute;
+    display: flex;
+    left: 30%;
+    top: 40%;
+    color: #606060;
+}
+.li_3{
+    position: absolute;
+    display: flex;
+    left: 30%;
+    top: 45%;
+    color: #606060;
+}
+.languge_RU{
+    position: absolute;
+    display: flex;
+    left: 65%;
+    top: 35%;
+    color: black;
+     border: ridge;
+     border-radius: 15%;
+     border-color: #feb386;
+}
+.languge_EN{
+    position: absolute;
+    display: flex;
+    left: 65%;
+    top: 42%;
+    color: black;
+     border: ridge;
+     border-radius: 15%;
+     border-color: #feb386;
+}
+a:hover{
+    background-color: #feb386;
+    box-shadow: 5px 5px #3a3939;
+
+}
+.here_i_will_tell_you{
+    position: absolute;
+    display: flex;
+    left: 25%;
+    top: 75%;
+}
+.text-1{
+    position: absolute;
+    display: flex;
+    left: 30%;
+    top: 85%;
+}
+.line-1{
+    position: absolute;
+    display: flex;
+    left: 5%;
+    top: 65%;
+    height: 0.5%;
+    width: 90%;
+    background-color: black;
+}
+.how_i_lerned{
+    position: absolute;
+    display: flex;
+    left: 44%;
+    top: 105%;
+}
+.how_i_lerned_text{
+    position: absolute;
+    display: flex;
+    left: 30%;
+    top: 115%;
+}
+.how_i_lerned_text_strong{
+    position: absolute;
+    display: flex;
+    left: 31%;
+    top: 80%;
+}
+.t1{
+    position: absolute;
+}
+.side_bar{
+    position: absolute;
+    top: 5000px;
+}
+@media screen and (max-width:1200px){
+    .body{
+        max-width: 970px;
+    }
+    .we_can_do{
+        left: 33%;
+    }
+    .languge_EN{
+        left: 80%;
+        top: 35%;
+    }
+    .languge_RU{
+        left: 80%;
+        top: 42%;
+    }
+    .main_minu{
+        top: -3%;
+    }
+    .here_i_will_tell_you{
+        top: 72%;
+    }
+}
+@media screen and (max-width:992px){
+    .body{
+        max-width: 750px;
+    }
+    .main_minu{
+        left: 20%;
+        top: -5%;
+    }
+    .name{
+        left: 35%;
+    }
+    .languge_RU{
+        left: 85%;
+    }
+    .languge_EN{
+        left: 85%;
+    }
+    .here_i_will_tell_you{
+        left: 20%;
+    }
+    .text-1{
+        left: 20%;
+    }
+    .how_i_lerned{
+        left: 40%;
+    }
+    .how_i_lerned_text{
+        left: 25%;
+    }
+    .how_i_lerned_text_strong{
+        left: 35%;
+    }
+}
+@media screen and (max-width:767px){
+    .body{
+        max-width: 595px;
+    }
+    .name{
+        left: 30%;
+    }
+    .we_can_do{
+        left: 30%;
+    }
+    .li_1{
+        left: 24%;
+    }
+    .li_2{
+        left: 24%;
+    }
+    .li_3{
+        left: 24%;
+    }
+    .languge_RU{
+        left: 95%;
+    }
+    .languge_EN{
+        left: 95%;
+    }
+    
+}
+@media screen and (max-width:592px){
+    .body{
+        max-width: 325px;
+    }
+    .main_minu{
+        left: 10%;
+        top: -1%;
+    }
+    .name{
+        left: 20%;
+    }
+    .we_can_do{
+        left: 20%;
+    }
+    .li_1{
+        left: 14%;
+    }
+    .li_2{
+        left: 14%;
+    }
+    .li_3{
+        left: 14%;
+    }
+    .languge_RU{
+        left: 95%;
+    }
+    .languge_EN{
+        left: 95%;
+    }
+    .here_i_will_tell_you{
+        left: 10%;
+    }
+    .text-1{
+        left: 10%;
+    }
+    .how_i_lerned{
+        left: 10%;
+    }
+    .how_i_lerned_text{
+        left: 10%;
+    }
+    .how_i_lerned_text_strong{
+        left: 40%;
+    }
+}
+@media screen and (max-width:439px){
+    .body{
+        max-width: 439px;
+    }
+    .main_minu{
+        left: 10%;
+        top: -10%;
+    }
+    .name{
+        left: 20%;
+    }
+    .we_can_do{
+        left: 20%;
+    }
+    .li_1{
+        left: 14%;
+    }
+    .li_2{
+        left: 14%;
+    }
+    .li_3{
+        left: 14%;
+    }
+    .languge_RU{
+        left: 95%;
+    }
+    .languge_EN{
+        left: 95%;
+    }
+    .here_i_will_tell_you{
+        left: 10%;
+    }
+    .text-1{
+        left: 10%;
+    }
+    .how_i_lerned{
+        left: 10%;
+    }
+    .how_i_lerned_text{
+        left: 10%;
+    }
+    .how_i_lerned_text_strong{
+        left: 40%;
+    }
+}
+@media screen and (max-width:320px){
+    .body{
+        max-width: none;
+    }
+    .main_minu{
+        left: 10%;
+        top: -7%;
+    }
+    .name{
+        left: 20%;
+        top: 30%;
+    }
+    .we_can_do{
+        left: 20%;
+        top: 50%;
+    }
+    .li_1{
+        left: 14%;
+        top: 55%;
+    }
+    .li_2{
+        left: 14%;
+        top: 60%;
+    }
+    .li_3{
+        left: 14%;
+        top: 65%;
+    }
+    .languge_RU{
+        left: 95%;
+    }
+    .languge_EN{
+        left: 95%;
+    }
+    .here_i_will_tell_you{
+        left: 10%;
+    }
+    .text-1{
+        left: 10%;
+    }
+    .how_i_lerned{
+        left: 10%;
+    }
+    .how_i_lerned_text{
+        left: 10%;
+    }
+    .how_i_lerned_text_strong{
+        left: 40%;
+    }
+}
